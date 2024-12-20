@@ -40,8 +40,7 @@ This project is an e-paper-based calendar display that integrates with Google Ca
 - 9.7-inch black and white e-paper display(ED097TC2) compatible with the [EPDiy library](https://github.com/vroland/epdiy)
 - Power supply (battery or USB)
 
-[![hardware](https://raw.githubusercontent.com/0015/Fridge-Calendar/refs/heads/main/misc/hardware.jpeg)]
-
+![hardware](https://raw.githubusercontent.com/0015/Fridge-Calendar/refs/heads/main/misc/hardware.jpeg)
 
 ---
 
@@ -111,7 +110,7 @@ This project is an e-paper-based calendar display that integrates with Google Ca
 4. Obtain the API key(Access Token), Refresh Token, client ID, and client secret.
 5. Add the credentials to your `app_config.h` file.
 
-[![Renew Access Token](https://raw.githubusercontent.com/0015/Fridge-Calendar/refs/heads/main/misc/renewed_access_token.png)]
+![Renew Access Token](https://raw.githubusercontent.com/0015/Fridge-Calendar/refs/heads/main/misc/renewed_access_token.png)
 
 
 ### WiFi Credentials
