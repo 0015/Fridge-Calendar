@@ -57,37 +57,49 @@ This project is an e-paper-based calendar display that integrates with Google Ca
 
 ## Installation
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/<your-username>/epaper-google-calendar.git
-   cd epaper-google-calendar
-   ```
+### 1. Clone the Repository
+```bash
+git clone https://github.com/0015/Fridge-Calendar.git
+cd Fridge-Calendar
+```
 
-2. **Set up ESP-IDF**:
-   Follow the [ESP-IDF setup guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html) for your platform.
+### 2. Create a Components Folder
+Inside your project directory, create a `components` folder:
+```bash
+mkdir components
+```
 
-3. **Install Dependencies**:
-   - Install the [EPDiy library](https://github.com/vroland/epdiy) into your ESP-IDF project.
-   - Include the [nlohmann/json](https://github.com/nlohmann/json) header file in your project.
+### 3. Add EPDiy Library
+Clone the [EPDiy](https://github.com/vroland/epdiy) library into the `components` folder:
+```bash
+cd components
+git clone https://github.com/vroland/epdiy.git
+```
 
-4. **Configure Project**:
-   - Set your WiFi credentials, Google API credentials, and other configurations in `app_config.h`:
-     ```cpp
-     #define WIFI_SSID "your_wifi_ssid"
-     #define WIFI_PASS "your_wifi_password"
-     #define CLIENT_ID "your_client_id"
-     #define CLIENT_SECRET "your_client_secret"
-     #define ACCESS_TOKEN "your_access_token"
-     #define REFRESH_TOKEN "your_refresh_token"
-     #define CALENDAR_IDS "<multiple_calendar_ids>"
-     #define TIMEZONE "your_time_zone"
-     ```
+### 4. Install JSON Parsing Library
+Install the `nlohmann-json` library using the ESP-IDF dependency manager:
+```bash
+idf.py add-dependency "johboh/nlohmann-json^3.11.3"
+```
 
-5. **Build and Flash**:
-   ```bash
-   idf.py build
-   idf.py flash
-   ```
+### 5. Configure Project
+Set your WiFi credentials, Google API credentials, and other configurations in `app_config.h`:
+```cpp
+#define WIFI_SSID "your_wifi_ssid"
+#define WIFI_PASS "your_wifi_password"
+#define CLIENT_ID "your_client_id"
+#define CLIENT_SECRET "your_client_secret"
+#define ACCESS_TOKEN "your_access_token"
+#define REFRESH_TOKEN "your_refresh_token"
+#define CALENDAR_IDS "<multiple_calendar_ids>"
+#define TIMEZONE "your_time_zone"
+```
+
+### 6. Build and Flash
+```bash
+idf.py build
+idf.py flash
+```
 
 ---
 
